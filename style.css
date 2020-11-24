@@ -346,7 +346,7 @@ header {
   }
 }
 
-@media (min-width: 920px) {
+@media (max-width: 920px) {
   .hamburger-menu-container {
     display: flex;
   }
@@ -492,7 +492,7 @@ header {
     transform: translateY(15px);
   }
 }
-@media(min-width:412px)
+@media(min-width:411px)
 {
     .main_div .side_heading
     {
