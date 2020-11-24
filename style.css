@@ -494,6 +494,10 @@ header {
 }
 @media(max-width:920px)
 {
+  .main_div
+    {
+      width: 100% !important;
+    }
     .main_div .side_heading
     {
 
