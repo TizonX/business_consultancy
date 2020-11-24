@@ -526,7 +526,7 @@ header {
 
     .main_div .main_img
     {
-        right: 15vh;
+/*         right: 15vh; */
         height: 15rem;
         width: 10rem;
         opacity: 0.15;
