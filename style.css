@@ -346,7 +346,7 @@ header {
   }
 }
 
-@media (max-width: 920px) {
+@media (min-width: 412px) {
   .hamburger-menu-container {
     display: flex;
   }
