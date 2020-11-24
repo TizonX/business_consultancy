@@ -492,7 +492,7 @@ header {
     transform: translateY(15px);
   }
 }
-@media(min-width:411px)
+@media(min-width:920px)
 {
     .main_div .side_heading
     {
