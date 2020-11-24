@@ -492,7 +492,7 @@ header {
     transform: translateY(15px);
   }
 }
-@media(max-width:920px)
+@media(min-width:920px)
 {
   .main_div
     {
