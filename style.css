@@ -277,7 +277,6 @@ header {
 
 .main_div
 {
-  border: 2px solid black;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -288,7 +287,6 @@ header {
 }
 .main_div .main_body
 {
-  border: 2px solid red;
   width: 80%;
   height: 70vh;
   display: flex;
@@ -297,7 +295,6 @@ header {
 }
 .main_div .main_body .side_heading
 {
-  border: 1px solid gray;
   width: 60%;
   height: 100%;
   position: relative;
@@ -308,7 +305,7 @@ header {
   font-size: 50px;
   letter-spacing: 1px;
   font-weight: lighter;
-  color: black;
+  color: rgba(255, 255, 255, 0.794);
   margin-top: 15vh;
 }
 .main_div .side_heading .main_p {
@@ -323,8 +320,8 @@ header {
   font-weight: 600;
   color: #111111;
   border-radius: 50px;
+  border-color: #111111;
   background:none;
-  border: 2px solid #283055;
   outline: none;
 
   margin-right: 30rem;
@@ -336,7 +333,6 @@ header {
 
 .main_div .main_body .main_img
 {
-  border: 1px solid blue;
   width: 40%;
   height: 100%;
   position: relative;
@@ -344,7 +340,6 @@ header {
 .main_div .main_body .main_img img
 {
     height: 60vh;
-    border: 5px solid green;
     position: absolute;
 }
 
@@ -508,11 +503,6 @@ header {
 
 @media(max-width:920px)
 {
-  .main_div
-  {
-    background-color: orange;
-
-  }
   .main_div .main_body
   {
     flex-direction: column;
@@ -526,15 +516,18 @@ header {
   .main_div .main_body .side_heading .main_h1
   {
     font-size: 30px;
+    padding: 10px;
   }
   .main_div .side_heading .main_p
   {
     font-size: 15px;
+    padding: 10px;
   }
   .main_div .side_heading .main_contact
   {
     font-size: 12px;
     margin-right: 10rem;
+    margin-left: 10px;
   }
   .main_div .main_body .main_img
   {
