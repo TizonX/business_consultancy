@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
-}
-
 ul {
   list-style: none;
 }
@@ -69,30 +65,6 @@ header {
 
 .logo span {
   font-weight: 300;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1.3rem;
-  font-size: 0.8rem;
-  border: 2px solid #fff;
-  border-radius: 2rem;
-  line-height: 1;
-  margin: 0 0.2rem;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
-
-.btn.solid,
-.btn.transparent:hover {
-  background-color: #fff;
-  color: #69bde7;
-}
-
-.btn.transparent,
-.btn.solid:hover {
-  background-color: transparent;
-  color: #fff;
 }
 
 .nav-links > ul {
@@ -157,7 +129,7 @@ header {
 }
 
 .dropdown-link:not(:nth-last-child(2)) {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 5px solid #efefef;
 }
 
 .dropdown-link i {
@@ -274,33 +246,31 @@ header {
   transform: translateY(0) rotate(45deg);
 }
 /* main div coding start here*/
-
-.main_div
-{
+/*========================================================================================================*/
+.main_div {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   background-color: teal;
 }
-.main_div .main_body
-{
+.main_div .main_body {
   width: 80%;
   height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.main_div .main_body .side_heading
-{
+.main_div .main_body .side_heading {
   width: 60%;
   height: 100%;
-  position: relative;
 }
-.main_div .main_body .side_heading .main_h1
-{
+.main_div .main_body .expo_img {
+  display: none;
+  position: absolute;
+}
+.main_div .main_body .side_heading .main_h1 {
   font-family: "Anton", sans-serif;
   font-size: 50px;
   letter-spacing: 1px;
@@ -312,7 +282,7 @@ header {
   /* margin-top: 5rem; */
   color: rgb(14, 15, 68);
   font-size: 20px;
-  font-family: 'Almarai', sans-serif;
+  font-family: "Almarai", sans-serif;
 }
 .main_div .side_heading .main_contact {
   padding: 12px 30px;
@@ -321,26 +291,145 @@ header {
   color: #111111;
   border-radius: 50px;
   border-color: #111111;
-  background:none;
+  background: none;
   outline: none;
 
   margin-right: 30rem;
   margin-top: 2rem;
 }
-
-
-
-
-.main_div .main_body .main_img
-{
+.main_div .main_body .main_img {
   width: 40%;
   height: 100%;
-  position: relative;
 }
-.main_div .main_body .main_img img
-{
-    height: 60vh;
-    position: absolute;
+.main_div .main_body .main_img img {
+  height: 70vh;
+}
+
+/*===================================================================================================*/
+
+/* second SECTION / happy_client coding started*/
+
+.help_section {
+  width: 100%;
+  height: 40vh;
+  background-color: #ecf0f1;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.help_section .help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+.help_section .help .fas {
+  color: teal;
+  font-size: 80px;
+}
+.help_section .help .help_h1 {
+  color: teal;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+/*=================================================================================================*/
+
+/* Our Service code start here */
+
+.services {
+  background: teal;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.services .our_services {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services .our_services .service_h1 {
+  color: #ecf0f1;
+  font-size: 10vh;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 5vh;
+}
+.services .our_services .service_exclamation_mark {
+  color: #ecf0f1;
+  font-size: 10vh;
+  margin-top: 5vh;
+}
+.services .our_services .service_p {
+  color: #ecf0f1;
+  font-size: 20px;
+  margin-top: 2vh;
+  font-family: inherit;
+}
+.services .our_services .service_p_director {
+  color: white;
+  font-size: 20px;
+  margin-top: 8vh;
+}
+.services .our_services .service_p_director .service_span {
+  color: #d2d7d3;
+}
+
+/* service_type coding start here */
+.services .service_type {
+  background-color: teal;
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.services .service_type .service_type_div {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+.services .service_type .service_type_div .service_img {
+  height: 40vh;
+  width: 50vh;
+}
+.services .service_type .service_type_div .service_h1 {
+  color: rgba(255, 255, 255, 0.794);
+  text-transform: uppercase;
+  padding: 20px;
+}
+.services .service_type .service_type_div .service_type_p {
+  color: #ecf0f1;
+  padding: 30px 50px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+.services .service_type .service_type_div .service_read {
+  background: none;
+  border: none;
+  color: #3498db;
+  margin-left: 20vh;
+  font-size: 16px;
+  outline: none;
+}
+.services .service_type .service_type_div .service_read:hover {
+  color: tomato;
 }
 
 @keyframes animation {
@@ -458,14 +547,14 @@ header {
 
   .arrow {
     z-index: 1;
-    background-color: teal;
+    background-color: #3183ac;
     left: 10%;
     transform: scale(1.1) rotate(45deg);
     transition: 0.5s;
   }
 
   .nav-link:hover .arrow {
-    background-color: teal;
+    background-color: #3183ac;
   }
 
   .dropdown .dropdown .arrow {
@@ -501,37 +590,102 @@ header {
   }
 }
 
-@media(max-width:920px)
-{
-  .main_div .main_body
-  {
+@media (max-width: 920px) {
+  .main_div {
+    height: 80vh;
+  }
+  .main_div .main_body {
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    margin-top: 30vh;
   }
-  .main_div .main_body .side_heading
-  {
+  .main_div .main_body .side_heading {
     width: 100%;
+    z-index: 1;
   }
-  .main_div .main_body .side_heading .main_h1
-  {
+  .main_div .main_body .expo_img {
+    display: list-item;
+    height: 50vh;
+    top: 4vh;
+    opacity: 0.2;
+    margin-top: 8vh;
+  }
+  .main_div .main_body .side_heading .main_h1 {
     font-size: 30px;
     padding: 10px;
   }
-  .main_div .side_heading .main_p
-  {
+  .main_div .side_heading .main_p {
     font-size: 15px;
     padding: 10px;
   }
-  .main_div .side_heading .main_contact
-  {
+  .main_div .side_heading .main_contact {
     font-size: 12px;
     margin-right: 10rem;
     margin-left: 10px;
   }
-  .main_div .main_body .main_img
-  {
-      display: none;
+  .main_div .main_body .main_img {
+    display: none;
   }
-  
+
+  /* happy_ client start here */
+  /*========================================================*/
+  .help_section {
+    flex-direction: column;
+    height: 80vh;
+
+    margin-bottom: 0vh;
+  }
+  .help_section .help {
+    border-bottom: 1px solid gray;
+    width: 80%;
+  }
+  .help_section .help .fas {
+    font-size: 60px;
+  }
+  .help_section .help .help_h1 {
+    font-size: larger;
+  }
+
+  /* ===============================================================*/
+
+  /* Our Service code here */
+
+  .services .our_services .service_h1 {
+    font-size: 5vh;
+  }
+  .services .our_services .service_exclamation_mark {
+    font-size: 7vh;
+  }
+  .services .our_services .service_p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* service_type code start */
+  .services .service_type {
+    flex-direction: column;
+  }
+  .services .service_type .service_type_div
+  {
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(24, 247, 255);
+    border-bottom: 1px solid rgb(24, 247, 255);
+    margin: 10px !important;
+    border-radius: 20px;
+  }
+  .services .service_type .service_type_div .service_img {
+    height: 30vh;
+    width: 40vh !important;
+  }
+  .services .service_type .service_type_div .service_h1
+  {
+    font-size: 20px;
+    padding: 5px !important;
+  }
+  .services .service_type .service_type_div .service_type_p 
+  {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
 }
