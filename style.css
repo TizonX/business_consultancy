@@ -401,6 +401,7 @@ header {
   justify-content: space-around;
   align-items: center;
   text-align: justify;
+  margin-bottom: 5vh;
 }
 .services .service_type .service_type_div .service_img {
   height: 40vh;
@@ -422,14 +423,85 @@ header {
 }
 .services .service_type .service_type_div .service_read {
   background: none;
-  border: none;
-  color: #3498db;
   margin-left: 20vh;
   font-size: 16px;
   outline: none;
+  padding: 20px;
+  border: none;
+
+  color: rgba(255, 255, 255, 0.794);
+  border-bottom: 1px solid rgb(24, 255, 236);
+  border-top: 1px solid rgb(24, 255, 236);
+  border-radius: 20px;
 }
-.services .service_type .service_type_div .service_read:hover {
-  color: tomato;
+
+/* footer coding strat here */
+/*====================================================================================*/
+
+.footer {
+  background-color: #016064;
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+}
+.footer .footer_div {
+
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer .footer_div .footer_heading {
+  width: 80%;
+  margin-left: 20px;
+  padding-bottom: 10px;
+
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  text-align: center;
+  border-bottom: 1px solid rgb(24, 255, 236);
+  border-radius: 20px;
+}
+.footer .footer_div .footer_heading .footer_h3 {
+  color: rgba(255, 255, 255, 0.794);
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+}
+.footer .footer_div .footer_list {
+  width: 100%;
+
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer .footer_div .footer_list .footer_span {
+  padding: 20px;
+
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.794);
+}
+.footer .footer_div .footer_list .footer_span a:hover {
+  border-bottom: 1px solid rgb(24, 255, 236);
+  border-radius: 20px;
+}
+.footer .footer_div .footer_list .footer_span a {
+  color: rgba(255, 255, 255, 0.794);
+  padding: 10px 20px;
 }
 
 @keyframes animation {
@@ -666,8 +738,7 @@ header {
   .services .service_type {
     flex-direction: column;
   }
-  .services .service_type .service_type_div
-  {
+  .services .service_type .service_type_div {
     justify-content: space-evenly;
     border-top: 1px solid rgb(24, 247, 255);
     border-bottom: 1px solid rgb(24, 247, 255);
@@ -678,14 +749,44 @@ header {
     height: 30vh;
     width: 40vh !important;
   }
-  .services .service_type .service_type_div .service_h1
-  {
+  .services .service_type .service_type_div .service_h1 {
     font-size: 20px;
     padding: 5px !important;
   }
-  .services .service_type .service_type_div .service_type_p 
-  {
+  .services .service_type .service_type_div .service_type_p {
     padding: 10px 30px;
     font-size: 20px;
+  }
+
+  /* footer coding start here */
+  .footer
+  {
+    flex-direction: column;
+    
+  }
+  .footer .footer_div
+  {
+    margin-top: 5vh;
+    height: 40vh;
+  }
+  .footer .footer_div .footer_heading
+  {
+    margin-left: 0;
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  .footer .footer_div .footer_heading .footer_h3
+  {
+    font-size: 25px;
+  }
+  .footer .footer_div .footer_list
+  {
+    align-items: center;
+  }
+  .footer .footer_div .footer_list .footer_span
+  {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
   }
 }
