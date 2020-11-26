@@ -310,9 +310,9 @@ header {
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
-  color: #111111;
+  color: rgba(255, 255, 255, 0.794);
   border-radius: 50px;
-  border-color: #111111;
+  border-color: rgba(255, 255, 255, 0.794);
   background: none;
   outline: none;
 
@@ -688,6 +688,7 @@ header {
 
 .social
 {
+
   top: 37vh;
   right: 0;
 
@@ -698,7 +699,7 @@ header {
   font-size: 20px;
 }
 
-
+/* main div coding start here */
 
   .main_div {
     height: 80vh;
@@ -731,7 +732,7 @@ header {
   .main_div .side_heading .main_contact {
     font-size: 12px;
     margin-right: 10rem;
-    margin-left: 10px;
+    margin-left: 18vh;
   }
   .main_div .main_body .main_img {
     display: none;
