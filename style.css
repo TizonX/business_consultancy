@@ -57,6 +57,12 @@ header {
   align-items: center;
   margin-right: 20vh;
 }
+.logo-container .logo
+{
+  height: 6vh;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
 
 .nav-btn {
   flex: 3;
@@ -68,25 +74,6 @@ header {
 }
 .nav-links ul li {
   width: 170px;
-}
-.log-sign {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.logo {
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 3rem;
-}
-
-.logo span {
-  font-weight: 300;
 }
 
 .nav-links > ul {
@@ -732,7 +719,7 @@ header {
   .main_div .side_heading .main_contact {
     font-size: 12px;
     margin-right: 10rem;
-    margin-left: 12vh;
+    margin-left: 18vh;
   }
   .main_div .main_body .main_img {
     display: none;
